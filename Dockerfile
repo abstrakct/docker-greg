@@ -4,6 +4,7 @@ MAINTAINER Rolf K.
 RUN apk add --no-cache \
     ca-certificates \
     python3 \
+    wget \
  && python3 -m ensurepip \
  && pip3 install greg stagger
 
