@@ -13,8 +13,6 @@ COPY crontab /var/spool/cron/crontabs/root
 COPY greg.conf /usr/lib/python3.8/site-packages/greg/data/
 COPY wget-greg.sh /root
 
-# TODO: chown downloaded files to configurable UID/GID
-
 USER root
 
 ENTRYPOINT []
