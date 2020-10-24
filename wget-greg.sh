@@ -11,7 +11,7 @@ OUTPUT="${DIRECTORY}/${DATE}-${FILENAMETITLE}.mp3"
 /usr/bin/wget $LINK -O $OUTPUT -a "${DIRECTORY}/${PODCASTTITLE}.log" -c -nv
 
 # Look for errors
-if [[ $? == 0 ]]; then
+if [ $? -eq 0 ]; then
     # No errors
     TITLE="Success!"
     MESSAGE="Downloaded file ${FILENAMETITLE} for podcast ${PODCASTTITLE}!"
